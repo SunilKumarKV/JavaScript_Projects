@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>New Years Eve Countdown</h1>
+        <div class="countdown-container">
+            <div class="countdown-el">
+                <p class="big-text" id="days">0</p>
+                <span>Days</span>
+            </div>
+            <div class="countdown-el">
+                <p class="big-text" id="hours">0</p>
+                <span>Hours</span>
+            </div>
+            <div class="countdown-el">
+                <p class="big-text" id="mins">0</p>
+                <span>Mins</span>
+            </div>
+            <div class="countdown-el">
+                <p class="big-text" id="seconds">0</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+        <div class="alarm-container">
+            <label for="submitDate">Set Alarm:</label>
+            <input type="datetime-local" id="submitDate">
+            <button onclick="setAlarm()">Set Alarm</button>
+        </div>
+    </div>
+</body>
+
+</html>
